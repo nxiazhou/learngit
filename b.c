@@ -19,8 +19,13 @@ void traverse(NODEPTR head,FUNPTR callback)//callback 为回调函数
 
 void print(int v)
 {
-    printf("%d\n",v)
+    printf("%d\n",v);
 }
+void printx3(int v)
+{
+    printf("%d\n",v*3);
+}
+
 int main()
 {
     NODEPTR head, p;
@@ -28,7 +33,8 @@ int main()
     a.next = &b;
     b.next = &c;
     head = &a;//指向链表头部的指针
-    traverse(head);
+    traverse(head,print);
+    traverse(head,printx3);
 
     return 0;
 
