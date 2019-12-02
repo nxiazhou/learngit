@@ -4,7 +4,7 @@ typedef struct node
 {
     int data;
     struct node *next; /*定义一个结构*/ //foo是类型不是变量
-} NODE,*NODEOTR;//未完成类型
+} NODE,*NODEPTR;//未完成类型
 
 void traverse(NODEPTR head)
 {
